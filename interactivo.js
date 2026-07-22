@@ -45,27 +45,17 @@ function actualizarCuadros(){
                 
             const bloqueColor = item.querySelector(".color");
             
-            
-            
-            
-
             botonCopiar.style.display = "block";
 
             bloqueColor.style.backgroundColor = color;
 
             texto.textContent = color;
 
-            
-            
         } else {
         item.style.display = "none"; }
     });
 }
     
-
-
-
-
 boton.addEventListener("click", ( actualizarCuadros));
 
 

@@ -102,9 +102,10 @@ main{
 }
 .titulo2 h1{
     font-size: 40px;
-    background: linear-gradient(to right, red, green, orange,purple,pink);
+   background: linear-gradient(to right, red, green, orange, purple, pink);
+    background-clip: text;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: transparent;
     margin-bottom: 0.5rem;
 
 }
