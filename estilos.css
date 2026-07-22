@@ -51,8 +51,8 @@ header{
 }
 
 .titulo1 p{
-    padding: 1px;
-    margin: 0;
+    width: 250px;
+    margin: auto;
     font-family: var(--fuente);
 
 }
@@ -62,12 +62,99 @@ header{
     list-style: none;
     margin: 10px;
     padding: 0;
-    gap: 1rem;
+    gap: 2rem;
 
 }
 .Navegacion a{
     color: var(--color-texto);
     font-size: 25px;
     font-family: var(--fuente);
+
+}
+main{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center; /* horizontal */
+    align-items: center;
+}
+
+
+
+.titulo2{
+    display: grid;
+    place-items: center;
+    font-family: var(--fuente);
+    color: var(--color-texto);
+    padding: 1px;
+
+}
+.titulo2 h1{
+    font-size: 40px;
+    background: linear-gradient(to right, red, green, orange,purple,pink);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 0.5rem;
+
+}
+.titulo2 p{
+    margin-top: 0;
+    
+}
+
+.configuracion{
+    background-color: var(--color-bloques);
+    border-radius: 10px;
+
+}
+
+.configuracion ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+
+    
+    
+}
+
+.secciones li{
+    
+    color: var(--color-texto);
+    font-family: var(--fuente);
+    font-size: 20px;
+    padding: 10px;
+    
+
+
+    
+
+
+}
+.numero{
+    border-right: 1px solid rgb(95, 95, 95);
+ 
+
+   
+
+}
+.tipo{
+    border-right: 1px solid rgb(95, 95, 95);  /* derecha */
+
+   
+}
+.generador{
+    color: none;
+
+
+    
+
+}
+.generador button{
+    color: var(--color-texto);
+    font-size: 20px;
+    font-family: var(--fuente);
+     background: linear-gradient(to right,rgb(141, 0, 160), rgb(199, 59, 255), rgb(196, 88, 88), rgb(253, 21, 21));
+  border-radius: 10px;
+  padding: 0.5rem;
 
 }
