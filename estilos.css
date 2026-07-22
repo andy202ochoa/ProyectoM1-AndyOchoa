@@ -1,5 +1,5 @@
 *{
-    padding: 0;
+
     box-sizing: border-box;
     
     
@@ -11,21 +11,26 @@ body{
 }
 :root {
 
-    /*paleta de colores*/
+    /*colores bloques*/
 
     --color-bloques: #0F172A;
+    --color-bloques2: #232835;
 
      /* Letras */
 
     --color-texto: hsl(0, 0%, 100%);
+    --color-texto2: hsl(0, 2%, 62%);
     --fuente:'Inter', sans-serif;
 
 }
+/*Encabezado----------------------------------------------------------------*/
+
 header{ 
     display: flex;
     background-color: var(--color-bloques);
     align-items: center;
     justify-content: space-between;
+    width: 100%;
 
   
 }
@@ -71,11 +76,18 @@ header{
     font-family: var(--fuente);
 
 }
+/*Titulo principal--------------------------------------------------------------*/
 main{
     display: grid;
     grid-template-columns: 1fr;
-    justify-items: center; /* horizontal */
+    justify-items: center; 
     align-items: center;
+}
+.contenedor{
+    display: flex;
+    gap: 2rem;
+    justify-content: center; 
+    align-items: flex-start; 
 }
 
 
@@ -100,6 +112,7 @@ main{
     margin-top: 0;
     
 }
+/*Bloque de configuración------------------------------------------------------*/
 
 .configuracion{
     background-color: var(--color-bloques);
@@ -108,53 +121,99 @@ main{
 }
 
 .configuracion ul{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     list-style: none;
+    gap: 10px;
+    margin-top: 0;
 
-    
-    
 }
 
 .secciones li{
-    
+
     color: var(--color-texto);
     font-family: var(--fuente);
-    font-size: 20px;
     padding: 10px;
-    
-
-
-    
-
-
 }
-.numero{
-    border-right: 1px solid rgb(95, 95, 95);
- 
 
-   
 
-}
+
 .tipo{
-    border-right: 1px solid rgb(95, 95, 95);  /* derecha */
-
-   
-}
-.generador{
-    color: none;
-
-
-    
+    border-right: none;
 
 }
 .generador button{
     color: var(--color-texto);
-    font-size: 20px;
+    font-size: 15px;
     font-family: var(--fuente);
-     background: linear-gradient(to right,rgb(141, 0, 160), rgb(199, 59, 255), rgb(196, 88, 88), rgb(253, 21, 21));
-  border-radius: 10px;
-  padding: 0.5rem;
+    background: linear-gradient(to right,rgb(141, 0, 160), rgb(199, 59, 255), rgb(196, 88, 88), rgb(253, 21, 21));
+    border-radius: 10px;
+    padding: 0.5rem;
+    height: 50px;
+    width: 250px;
+    
 
+}
+#paletas{
+    width: 180px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: var(--color-bloques2);
+    color: var(--color-texto);
+    font-family: var(--fuente);
+
+}
+
+#tipo_color{
+    width: 180px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: var(--color-bloques2);
+    color: var(--color-texto);
+    font-family: var(--fuente);
+
+}
+
+.indicación{
+    font-size: 10px;
+    color: var(--color-texto2);
+}
+
+/*Paletas de colores-------------------------------------------------*/
+
+
+
+.colores{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+
+}
+.colores li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    width: 150px;
+    height: 300px;
+    gap: 5px;
+
+}
+.color{
+
+    width: 150px;
+    height: 250px;
+}
+.codigo {
+    background:  #0B0F1A;
+    color: var(--color-texto2);
+    padding: 5px;
+    font-size: 12px;
+    width: 150px;
+    text-align: center;
+
+}
+.copiar {
+    display: none;
+    font-size: 12px;
+    cursor: pointer;
+    padding: 4px 8px;
 }

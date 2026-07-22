@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>
-    <meta charset="UTF-8">
-    <title>Generador  de paletas</title>
-    <link rel="icon" type="image/x-icon" href="logo.png">
-    <link rel="stylesheet" href="estilos.css">
+        <meta charset="UTF-8">
+        <title>Generador  de paletas</title>
+        <link rel="icon" type="image/x-icon" href="logo.png">
+        <link rel="stylesheet" href="estilos.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     </head>
     <body>
         <header>
@@ -30,20 +32,82 @@
                 <h1>Genera Paletas de Colores Increíbles</h1>
                 <p>Crea convinaciones unicas y armoniosas para tus proyectos</p>
             </div>
-            <article class="configuracion">
-                <ul class="secciones">
-                    <li class="numero">
-                        <p>Cantidad de paletas</p>
-                    </li>
-                    <li class="tipo">
-                        <p>Tipo de color</p>
-                    </li>
-                    <li class="generador">
-                        <button>Generar Paletas</button>
-                    </li>
-                </ul>
-            </article>
+            <div class="contenedor">
+                <article class="configuracion">
+                    <ul class="secciones">
+                        <li class="numero">
+                            <p>Cantidad de paletas</p>
+                            <select id="paletas">
+
+                                <option value="6" selected>6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                            </select>
+                            <p class="indicación">Selecciona del 6 al 9</p>
+
+                        <li class="tipo">
+                            <p>Tipo de color</p>
+                                <select id="tipo_color">
+                                    <option value="hsl" selected>HSL</option>
+                                    <option value="hex">HEX</option>
+                                </select>
+                                <p class="indicación">Elige el formato de color</p>
+                        </li>
+                        <li class="generador">
+                            <button id="boton">
+                                <i class="fa-solid fa-wand-magic-sparkles"></i>
+                                Generar Paletas
+                            </button>
+                        </li>
+                    </ul>
+                </article>
+                <article class="cuadro_colores">
+                    <ul class="colores">
+                        <li> 
+                            <div class="color"></div>
+                            <span class="codigo"></span>
+                            <button class="copiar"> <i class="fa-regular fa-copy"></i></button></li>
+                        <li> 
+                            <div class="color"></div>
+                            <span class="codigo"></span>
+                            <button class="copiar"> <i class="fa-regular fa-copy"></i></button></li>
+                        <li> 
+                            <div class="color"></div>
+                            <span class="codigo"></span>
+                            <button class="copiar"> <i class="fa-regular fa-copy"></i></button></li>
+                        <li> 
+                            <div class="color"></div>
+                            <span class="codigo"></span>
+                            <button class="copiar"> <i class="fa-regular fa-copy"></i></button></li>
+                        <li> 
+                            <div class="color"></div>
+                            <span class="codigo"></span>
+                            <button class="copiar"> <i class="fa-regular fa-copy"></i></button></li>
+                        <li> 
+                            <div class="color"></div>
+                            <span class="codigo"></span>
+                            <button class="copiar"> <i class="fa-regular fa-copy"></i></button></li>
+                        <li>
+                            <div class="color"></div>
+                            <span class="codigo"></span>
+                            <button class="copiar"> <i class="fa-regular fa-copy"></i></button></li>
+                        <li>
+                            <div class="color"></div>
+                            <span class="codigo"></span>
+                            <button class="copiar"> <i class="fa-regular fa-copy"></i></button></li>
+                        <li>
+                            <div class="color"></div>
+                            <span class="codigo"></span>
+                            <button class="copiar"> <i class="fa-regular fa-copy"></i></button></li>
+                        
+                    </ul>
+                    
+
+                </article>
+            </div>
         </main>
+    <script src="interactivo.js"></script>
        
     </body>
 </html>
