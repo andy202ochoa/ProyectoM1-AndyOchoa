@@ -43,16 +43,16 @@ header{
 
     height: 70px;
     width: 70px;
-    margin: 20px;
+    margin: 1.3rem;
     border-radius: 10px;
     
 }
 .titulo1{
     color: var(--color-texto);
-    font-size: 30px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    margin-left: 3px;
+    font-size: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 0.1rem;
 }
 
 .titulo1 p{
@@ -65,14 +65,13 @@ header{
 .Navegacion {
     display: flex;
     list-style: none;
-    margin: 10px;
-    padding: 0;
+    margin: 1rem;
     gap: 2rem;
 
 }
 .Navegacion a{
     color: var(--color-texto);
-    font-size: 25px;
+    font-size: 2rem;
     font-family: var(--fuente);
 
 }
@@ -97,12 +96,12 @@ main{
     place-items: center;
     font-family: var(--fuente);
     color: var(--color-texto);
-    padding: 1px;
+    padding: 0.3rem;
 
 }
 .titulo2 h1{
-    font-size: 40px;
-   background: linear-gradient(to right, red, green, orange, purple, pink);
+    font-size: 3rem;
+    background: linear-gradient(to right, red, green, orange, purple, pink);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
@@ -123,7 +122,7 @@ main{
 
 .configuracion ul{
     list-style: none;
-    gap: 10px;
+    gap: 0.7rem;
     margin-top: 0;
 
 }
@@ -132,7 +131,7 @@ main{
 
     color: var(--color-texto);
     font-family: var(--fuente);
-    padding: 10px;
+    padding: 0.7rem;
 }
 
 
@@ -143,7 +142,7 @@ main{
 }
 .generador button{
     color: var(--color-texto);
-    font-size: 15px;
+    font-size: 1rem;
     font-family: var(--fuente);
     background: linear-gradient(to right,rgb(141, 0, 160), rgb(199, 59, 255), rgb(196, 88, 88), rgb(253, 21, 21));
     border-radius: 10px;
@@ -174,7 +173,7 @@ main{
 }
 
 .indicación{
-    font-size: 10px;
+    font-size: 0.7rem;
     color: var(--color-texto2);
 }
 
@@ -192,10 +191,10 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10px;
+    padding: 0.6rem;
     width: 150px;
     height: 300px;
-    gap: 5px;
+    gap: 0.3rem;
 
 }
 .color{
@@ -206,25 +205,25 @@ main{
 .codigo {
     background:  #0B0F1A;
     color: var(--color-texto2);
-    padding: 5px;
-    font-size: 12px;
+    padding: 0.3rem;
+    font-size: 1rem;
     width: 150px;
     text-align: center;
 
 }
 .copiar {
     display: none;
-    font-size: 12px;
+    font-size: 1rem;
     cursor: pointer;
-    padding: 4px 8px;
+    padding: 0.2rem 0.4rem;
 }
 /*footer------------------------------------*/
 .footer {
     background-color: #0b0f19; /* Fondo oscuro acorde a tu app */
     color: #ffffff;
-    padding: 30px 20px;
+    padding: 3rem 2rem;
     border-top: 1px solid #1f293d;
-    margin-top: 50px;
+    margin-top: 3rem;
 }
 
 .footer-contenido {
@@ -234,7 +233,7 @@ main{
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    gap: 20px;
+    gap: 1.5rem;
 }
 
 .footer-texto {
@@ -246,7 +245,7 @@ main{
 /* Contenedor de botones */
 .footer-redes {
     display: flex;
-    gap: 15px;
+    gap: 1rem;
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -255,8 +254,8 @@ main{
 .btn-red {
     display: inline-flex;
     align-items: center;
-    gap: 8px;
-    padding: 10px 18px;
+    gap: 0.8rem;
+    padding: 0.7rem 1rem;
     border-radius: 8px;
     background-color: #1e293b;
     color: #ffffff;
@@ -288,10 +287,97 @@ main{
     background-color: #25d366; /* Verde tipo WhatsApp */
     border-color: #1eb954;
 }
+@media (max-width: 480px) {
 
-/* Diseño Responsive para pantallas pequeñas */
-@media (min-width: 600px) {
-    .footer-contenido {
-        flex-direction: row; /* En pantallas grandes lo pone en una sola fila */
-    }
+  header {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .logo {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .titulo1 p {
+    width: auto;
+    text-align: center;
+  }
+
+  .Navegacion {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .Navegacion a {
+    font-size: 1.2rem;
+  }
+
+  .contenedor {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .colores {
+    justify-content: center;
+  }
+
+  .colores li {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+  }
+
+  .color {
+    width: 100%;
+    height: 150px;
+  }
+
+  .codigo {
+    width: 100%;
+    font-size: 0.8rem;
+  }
+
+  .generador button {
+    width: 100%;
+  }
+
+  #paletas,
+  #tipo_color {
+    width: 100%;
+  }
+
+}
+@media (max-width: 768px) {
+
+  .contenedor {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .colores {
+    justify-content: center;
+  }
+
+  .colores li {
+    width: 45%;
+    height: auto;
+  }
+
+  .color {
+    width: 100%;
+    height: 200px;
+  }
+
+  .codigo {
+    width: 100%;
+  }
+
+  .Navegacion a {
+    font-size: 1.5rem;
+  }
+
 }
